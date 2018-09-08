@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  font-family: 'Lucida console', monospace
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  flex-direction: column;
+}
+
+#message, #notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  font-size: 1.5rem;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board div {
+  color: red;
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border: 1px #ccc dotted;
+  border-radius: 10%;
+  background-color: darkslategray;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board div:hover {
+  background-color: black;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/100% url("images/Boom.jpg") orangered;
+}
+
+div.hidden {
+  background:black;
+}
+
+div.hidden:hover {
+  background: black;
+}
+
+div.marked, div.marked:hover {
+  background: no-repeat center/100% url("images/tom.jpg")darkblue;
+}
